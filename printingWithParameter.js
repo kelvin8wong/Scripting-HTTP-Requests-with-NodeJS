@@ -6,11 +6,11 @@ var requestOptions = {
   };
 
 
-function getAndPrintHTML (requestOptions) {
+function getAndPrintHTML (options) {
 
   var rawData = [];
 
-  https.get(requestOptions, function (response) {
+  https.get(options, function (response) {
 
     response.setEncoding('utf8');
 
